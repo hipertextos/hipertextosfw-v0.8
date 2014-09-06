@@ -1,4 +1,4 @@
-hipertextos* framework* v.08
+hipertextos framework v.08
 ==========================
 
 Another CSS library
