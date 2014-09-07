@@ -79,30 +79,61 @@
 	
 	<div class="page" id="page">
 	
+	<MainPage>
 		<header class="shallow soft universe thin">
-			<h1 class="g anm-zoomInDown delay-500"><a href="http://code.hipertextos.net/" title="Home"><$BlogTitle$> <br class="visible-phone"><small><$BlogDescription$></small></a></h1>
+			<h1 class="g anm-zoomInDown delay-500"><a href="<$BlogUrl$>" title="<$BlogTitle$>"><$BlogTitle$> <br class="visible-phone"><small><$BlogDescription$></small></a></h1>
 		</header>
 		
 		<main id="content">
 			<div class="content">
 			
-				<div class="posts">
-				  <Blogger>
-					<article class="universe thin anm-zoomInLeft delay-1000">    
-	  
-						<h2><MainOrArchivePage><a href="<$BlogItemPermalinkUrl$>"></MainOrArchivePage><$BlogItemTitle$><MainOrArchivePage></a></MainOrArchivePage></h2>
-						<p class="l"><$BlogItemDateTime$></p>
-						<div class="entry">
+				<div class="cell-2">
+					<aside class="anm-scaleUpDown delay-2000">
+						<nav class="universe s">
+							<ul>
+								<li><a href="http://articles.hipertextos.net/search/label/HTML" title="Articles sobre HTML">HTML</a></li>
+								<li><a href="http://articles.hipertextos.net/search/label/CSS" title="Articles sobre CSS">CSS</a></li>
+								<li><a href="http://articles.hipertextos.net/search/label/JS" title="Articles sobre JS">JS</a></li>
+							</ul>
+						</nav>
+					</aside>
+				</div>
+				<div class="cell-8">
+				 
+				 <Blogger>
+					<article class="anm-zoomInUp delay-1000">
+						<h2 class="universe thin"><MainOrArchivePage><a href="<$BlogItemPermalinkUrl$>"></MainOrArchivePage><$BlogItemTitle$><MainOrArchivePage></a></MainOrArchivePage></h2>
+						<p class="universe s"><b><$BlogItemDateTime$></b></p>
+						<div class="prose">
 							<$BlogItemBody$>
 						</div>
 						<nav class="pagination"><$BlogPaginationLinks$></nav>
 					</article>
-				  </Blogger>
+				</Blogger>
+				  
 				</div>
-			
+				<div class="cell-2">
+					<aside class="anm-scaleUpDown delay-2000">
+						<nav class="universe s"><div class="sharing-list"></div></nav>
+					</aside>
+				</div>
 				<hr>
+				
 			</div><!-- /.content -->
 		</main>
+	</MainPage>
+
+	<ItemPage>
+		<header class="shallow soft universe thin">
+			<h6 class="universe l anm-scaleUp delay-1000"><a href="<$BlogUrl$>" title="<$BlogTitle$> main page"><$BlogTitle$></a></h6>
+			<Blogger><h1 class="g anm-zoomInDown delay-500"><a href="<$BlogItemPermalinkUrl$>" title="<$BlogItemTitle$>"><small><$BlogItemTitle$></small></a></h1></Blogger>
+		</header>
+		<Blogger>
+		<main class="container" id="content">
+			<$BlogItemBody$>
+		</main>
+		</Blogger>
+	</ItemPage>
 			
 		<footer id="footer" class="universe anm-zoomInUp">
 			<hr>
